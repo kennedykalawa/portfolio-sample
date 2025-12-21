@@ -431,3 +431,85 @@ p {
 .contact-item a:hover {
     color: aqua;
 }
+
+
+
+
+
+/* --- RESPONSIVE DESIGN --- */
+
+/* For Tablets and Small Laptops */
+@media (max-width: 992px) {
+    .section2 {
+        padding: 60px 5%;
+        gap: 30px;
+    }
+    
+    h2 {
+        font-size: 35px; /* Shrink title slightly */
+    }
+}
+
+/* For Mobile Phones (The most important part) */
+@media (max-width: 768px) {
+    /* 1. Stack the Navbar vertically */
+    .hero-section1 {
+        flex-direction: column;
+        padding: 20px;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .nav-tags {
+        gap: 15px;
+        flex-wrap: wrap; /* Allows links to go to second line if needed */
+        justify-content: center;
+    }
+
+    .nav-tags a {
+        font-size: 12px;
+    }
+
+    /* 2. Stack the Hero Content (Text above Image) */
+    .section2 {
+        flex-direction: column-reverse; /* Put image on top of text */
+        text-align: center;
+        padding: 40px 5%;
+        justify-content: center;
+    }
+
+    .me {
+        width: 100%;
+    }
+
+    /* 3. Adjust Font Sizes for readability */
+    h2 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    /* 4. Center the buttons on mobile */
+    .button-container {
+        justify-content: center;
+        flex-direction: column; /* Stack buttons on top of each other */
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%; /* Full width buttons for easy thumb clicking */
+    }
+
+    /* 5. Make the image smaller so it doesn't take the whole screen */
+    .img-frame {
+        width: 220px;
+        height: 220px;
+        margin-bottom: 30px;
+    }
+}
+
+
+
+
