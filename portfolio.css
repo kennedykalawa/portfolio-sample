@@ -436,9 +436,9 @@ p {
 
 
 
-/* --- RESPONSIVE DESIGN --- */
+/* --- COMPREHENSIVE RESPONSIVE DESIGN --- */
 
-/* For Tablets and Small Laptops */
+/* For Tablets (Screens smaller than 992px) */
 @media (max-width: 992px) {
     .section2 {
         padding: 60px 5%;
@@ -446,13 +446,13 @@ p {
     }
     
     h2 {
-        font-size: 35px; /* Shrink title slightly */
+        font-size: 35px; /* Shrinks the headline slightly */
     }
 }
 
-/* For Mobile Phones (The most important part) */
+/* For Mobile Phones (Screens smaller than 768px) */
 @media (max-width: 768px) {
-    /* 1. Stack the Navbar vertically */
+    /* 1. Navbar becomes a vertical list for easier tapping */
     .hero-section1 {
         flex-direction: column;
         padding: 20px;
@@ -462,7 +462,7 @@ p {
 
     .nav-tags {
         gap: 15px;
-        flex-wrap: wrap; /* Allows links to go to second line if needed */
+        flex-wrap: wrap;
         justify-content: center;
     }
 
@@ -470,19 +470,19 @@ p {
         font-size: 12px;
     }
 
-    /* 2. Stack the Hero Content (Text above Image) */
+    /* 2. Content stacks: Image goes above the text */
     .section2 {
-        flex-direction: column-reverse; /* Put image on top of text */
+        flex-direction: column-reverse;
         text-align: center;
         padding: 40px 5%;
-        justify-content: center;
+        height: auto; /* Allows height to expand with content */
     }
 
     .me {
         width: 100%;
     }
 
-    /* 3. Adjust Font Sizes for readability */
+    /* 3. Scale text for smaller screens */
     h2 {
         font-size: 28px;
     }
@@ -491,18 +491,21 @@ p {
         font-size: 16px;
     }
 
-    /* 4. Center the buttons on mobile */
+    /* 4. Center and expand buttons for better touch targets */
     .button-container {
         justify-content: center;
-        flex-direction: column; /* Stack buttons on top of each other */
+        flex-direction: column;
         width: 100%;
+        gap: 15px;
     }
 
     .btn {
-        width: 100%; /* Full width buttons for easy thumb clicking */
+        width: 100%;
+        max-width: 320px; /* Prevents buttons from getting too wide */
+        margin: 0 auto;
     }
 
-    /* 5. Make the image smaller so it doesn't take the whole screen */
+    /* 5. Size the profile image appropriately */
     .img-frame {
         width: 220px;
         height: 220px;
@@ -510,6 +513,166 @@ p {
     }
 }
 
+@media (max-width: 768px) {
+    /* (Include your previous home page mobile fixes here) */
 
+    /* Stacking the About Me text and image */
+    .about-layout {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 40px 5%;
+    }
 
+    /* Stacking the Extra Info Cards (Beliefs & Focus) */
+    .extra-info {
+        flex-direction: column;
+        padding: 40px 5%;
+        gap: 20px;
+    }
+
+    .info-card {
+        min-width: 100%; /* Cards take full width on phone */
+        width: 100%;
+    }
+
+    .info-card h3 {
+        font-size: 20px;
+    }
+
+    .info-card ul {
+        font-size: 16px;
+    }
+
+    /* Adjusting the CTA box at the bottom */
+    .cta-box {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* ... (Keep your previous Home and About mobile fixes here) ... */
+
+    /* Adjust the Skills Container padding */
+    .skills-container {
+        padding: 40px 5%;
+    }
+
+    /* Shrink the section title so it doesn't wrap awkwardly */
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+
+    /* Force the skills grid into a single column */
+    .skills-grid {
+        grid-template-columns: 1fr; /* One item per row */
+        gap: 20px;
+    }
+
+    .skill-card {
+        padding: 20px;
+    }
+
+    .skill-card h3 {
+        font-size: 1.2rem;
+    }
+
+    /* Soft Skills adjustments */
+    .soft-skills-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .soft-skills-section .info-card ul li {
+        font-size: 15px; /* Slightly smaller text for mobile */
+    }
+}
+
+@media (max-width: 768px) {
+    /* ... (Keep your previous mobile fixes) ... */
+
+    .projects-container {
+        padding: 40px 5%;
+    }
+
+    .projects-container .hero p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    /* Force the project cards into a single column */
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        margin-top: 30px;
+    }
+
+    .project-card {
+        max-width: 100%;
+    }
+
+    .project-img-placeholder {
+        height: 150px; /* Slightly shorter image area on mobile */
+        font-size: 1.5rem;
+    }
+
+    .project-info {
+        padding: 20px;
+    }
+
+    .project-info h3 {
+        font-size: 1.3rem;
+    }
+
+    /* Stack tech tags neatly if they get too long */
+    .tech-stack {
+        gap: 8px;
+    }
+
+    .tech-stack span {
+        font-size: 0.7rem;
+        padding: 3px 8px;
+    }
+}
+ @media (max-width: 768px) {
+    /* ... (Include your previous mobile fixes for Home, About, Skills, and Projects) ... */
+
+    /* Stacking the contact info and the image */
+    .contact-layout {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 40px 5%;
+        gap: 30px;
+    }
+
+    /* Adjust the contact list spacing */
+    .contact-list {
+        width: 100%;
+        align-items: center;
+    }
+
+    .contact-item {
+        width: 100%;
+        max-width: 400px; /* Prevents icons from stretching too far */
+        justify-content: flex-start;
+        text-align: left;
+    }
+
+    /* Disable the slide-out hover effect on mobile for better stability */
+    .contact-item:hover {
+        transform: none; 
+        border-color: aqua;
+    }
+
+    .contact-item i {
+        font-size: 20px;
+    }
+
+    .contact-item h3 {
+        font-size: 15px;
+    }
+
+    .contact-item p {
+        font-size: 14px;
+    }
+}
 
