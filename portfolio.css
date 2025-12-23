@@ -325,6 +325,11 @@ p {
     border-bottom: 1px solid rgba(0, 255, 255, 0.1);
 }
 
+.project-img-placeholder img{
+    width: 26vw;
+    height: 18vh;
+}
+
 .project-info {
     padding: 25px;
 }
