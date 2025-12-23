@@ -1,11 +1,11 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Prevents layout breaking */
+    box-sizing: border-box; 
 }
 
 body {
-    background-color: #0a192f; /* Deep tech blue */
+    background-color: #0a192f; 
      background-image: url("./4.avif"); 
     background-size: cover;
     color: white;
@@ -13,7 +13,7 @@ body {
     
     background: linear-gradient(rgba(10, 25, 47, 0.8), rgba(10, 25, 47, 0.8)), url("./4.avif");
     background-size: cover;
-    background-attachment: fixed; /* Keeps the background still while you scroll */
+    background-attachment: fixed; 
 
 }
 
@@ -24,14 +24,14 @@ body {
     align-items: center;
     padding: 20px 8%;
     background: rgba(46, 77, 71, 0.1);
-    backdrop-filter: blur(10px); /* Blurs background for modern look */
+    backdrop-filter: blur(10px); 
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     position: sticky;
     top: 0;
 
       background: linear-gradient(rgba(10, 25, 47, 0.8), rgba(10, 25, 47, 0.8)), url("./4.avif");
     background-size: cover;
-    background-attachment: fixed; /* Keeps the background still while you scroll */
+    background-attachment: fixed; 
 }
 
 .p1 {
@@ -76,7 +76,7 @@ body {
 .name-gradient {
     background: linear-gradient(90deg, #00f2fe, #4facfe);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; /* Makes the name look like a gradient */
+    -webkit-text-fill-color: transparent; 
 }
 
 h2 {
@@ -101,7 +101,7 @@ p {
 .img-frame {
     width: 300px;
     height: 300px;
-    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%; /* Trendy blob shape */
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%; 
     overflow: hidden;
     border: 4px solid aqua;
     box-shadow: 0 0 25px rgba(0, 255, 255, 0.3);
@@ -109,7 +109,7 @@ p {
 }
 
 .img-frame:hover {
-    border-radius: 50%; /* Smoothly turns into a circle on hover */
+    border-radius: 50%; 
 }
 
 .img-frame img {
@@ -141,7 +141,7 @@ p {
 
 .btn-primary:hover {
     background-color: white;
-    transform: translateY(-5px); /* Button pops up slightly */
+    transform: translateY(-5px); 
 }
 
 .btn-secondary {
@@ -157,7 +157,7 @@ p {
 /* --- Additional styles for About Page --- */
 
 .about-layout {
-    align-items: flex-start; /* Aligns text to top */
+    align-items: flex-start; 
     padding-bottom: 10px;
 }
 
@@ -167,7 +167,7 @@ p {
     flex-wrap: wrap;
     padding: 20px 8%;
     gap: 30px;
-    background: rgba(10, 25, 47, 0.5); /* Slightly darker area */
+    background: rgba(10, 25, 47, 0.5); 
 }
 
 .info-card {
@@ -407,7 +407,7 @@ p {
 .contact-item:hover {
     border-color: aqua;
     background: rgba(0, 255, 255, 0.05);
-    transform: translateX(10px); /* Subtle slide effect */
+    transform: translateX(10px); 
 }
 
 .contact-item i {
@@ -430,7 +430,7 @@ p {
 
 .contact-item a {
     color: #8892b0;
-    text-transform: none; /* Keeps email/links lowercase */
+    text-transform: none; 
     transition: 0.3s;
 }
 
@@ -452,7 +452,7 @@ p {
     }
     
     h2 {
-        font-size: 35px; /* Shrinks the headline slightly */
+        font-size: 35px; 
     }
 }
 
@@ -481,7 +481,7 @@ p {
         flex-direction: column-reverse;
         text-align: center;
         padding: 40px 5%;
-        height: auto; /* Allows height to expand with content */
+        height: auto; 
     }
 
     .me {
@@ -507,7 +507,7 @@ p {
 
     .btn {
         width: 100%;
-        max-width: 320px; /* Prevents buttons from getting too wide */
+        max-width: 320px; 
         margin: 0 auto;
     }
 
@@ -537,7 +537,7 @@ p {
     }
 
     .info-card {
-        min-width: 100%; /* Cards take full width on phone */
+        min-width: 100%;
         width: 100%;
     }
 
@@ -571,7 +571,7 @@ p {
 
     /* Force the skills grid into a single column */
     .skills-grid {
-        grid-template-columns: 1fr; /* One item per row */
+        grid-template-columns: 1fr; 
         gap: 20px;
     }
 
@@ -589,7 +589,7 @@ p {
     }
 
     .soft-skills-section .info-card ul li {
-        font-size: 15px; /* Slightly smaller text for mobile */
+        font-size: 15px; 
     }
 }
 
@@ -617,7 +617,7 @@ p {
     }
 
     .project-img-placeholder {
-        height: 150px; /* Slightly shorter image area on mobile */
+        height: 150px; 
         font-size: 1.5rem;
     }
 
