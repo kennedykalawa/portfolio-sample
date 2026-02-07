@@ -33,9 +33,34 @@ body {
     background-size: cover;
     background-attachment: fixed; 
 }
-.mylogo{
-    height: 11vh;
-    width: 10vw;
+/* .mylogo{
+    height: 10vh;
+    width: 8vw;
+} */
+/*  .mylogo {
+    height: 65px;  
+    width: 65px;
+    border-radius: 50%;
+} */
+ .mylogo {
+    height: 90px;
+    width: 90px;
+    border-radius: 70%;              /* Makes it round */
+    object-fit: cover;                /* Fits image perfectly */
+    border: 2px solid aqua;          /* Aqua outline */
+    box-shadow: 
+        0 0 20px rgba(0, 255, 255, 0.6),    /* Close glow */
+        0 0 40px rgba(0, 255, 255, 0.4),    /* Extended glow */
+        inset 0 0 10px rgba(0, 255, 255, 0.2); /* Inner glow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.mylogo:hover {
+    transform: scale(1.1);  /* Just scale, no rotation */
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.8),
+                0 0 60px rgba(0, 255, 255, 0.6);
+}
+.mylogo {
+    object-position: center;
 }
 .p1 {
     color: rgb(0, 166, 255);
